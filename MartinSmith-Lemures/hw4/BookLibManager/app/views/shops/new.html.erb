@@ -1,0 +1,29 @@
+<div class="container well margin-top-20 small-container">
+    <%= form_for [@book,@shop] do |shop| %>
+    <div class="bold margin-top-20">
+    		Shop Name
+    	</div>
+    	<div class="margin-top-20">
+
+    		<%= shop.text_field :ShopName %>
+    	</div>
+    	<div class="bold margin-top-20">
+    		Address
+    	</div>
+    	<div class="margin-top-20">
+    		<%= shop.text_field :Address %>
+    	</div>
+    	<div class="bold margin-top-20">
+    		Website
+    	</div>
+    	<div class="margin-top-20">
+
+    		<%= shop.text_field :website%>
+    	</div>
+    	<div class="margin-top-20">
+    		<a href="<%=book_shops_path%>" class="btn btn-default">Cancel</a>
+    		<button type="submit" class="btn btn-success">Submit</button>
+    	</div>
+
+    <%end%>
+</div>
