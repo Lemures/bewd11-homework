@@ -1,0 +1,17 @@
+<div class="container">
+<h1>Student: <%=@student.name %> Enrollment Page</h1>
+<%= form_tag do %>
+<div>
+    <%= collection_select( :student, :course, Course.all, :id, :name,{selected: Student.find(params[:id]).courses.ids},{multiple: true}) %>
+</div>
+<%=submit_tag "Save", class: "btn btn-primary"%>
+<%end%>
+<table class= "table striped">
+<tr>
+    <td>
+    c.name
+    <td>
+</tr>
+
+</table>
+</div>

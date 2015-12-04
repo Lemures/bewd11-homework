@@ -1,7 +1,17 @@
 Rails.application.routes.draw do
-    get "/" => "blm#index"
-    get "/edit" => "blm#edit"
-  # The priority is based upon order of creation: first created -> highest priority.
+#     get "/books" => "blm#index"
+
+#     post "/books" => "blm#create"
+
+#     get "/books/:id/edit" => "blm#edit", :as => :book
+
+#     put "/books/:id/edit" => "blm#update"
+root "books#index"
+
+    resources :books do
+        resources :shops
+    end
+  #The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"

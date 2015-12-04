@@ -4,7 +4,6 @@ user_emails = ["bob@gmail.com", "csmith@yahoo.com", "kscott@hotmail.com"]
 
 arr = []
 arr2 = []
-
 contact_info = {}
 
 user_names.each_with_index do |name, index|
@@ -20,6 +19,8 @@ arr.each do |names,emails|
 end
 
 p arr2
+
+
 
 =begin
 contact_info.each do |key,email|

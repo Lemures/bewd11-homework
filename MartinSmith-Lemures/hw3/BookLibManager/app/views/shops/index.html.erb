@@ -1,0 +1,11 @@
+<div class="container">
+    <table class="table table-striped table-hover">
+        <%= @shop do |shop|%>
+            <tr>
+                <td><%=shop.Name %></td>
+                <td><%=shop.Address %></td>
+                <td><%=shop.Website %></td>
+            </tr>
+        <%end%>
+    </table>
+</div>

@@ -11,13 +11,13 @@ class Calculator
    end
     
     def run_calculator
-        if @operation == "multiply"
+        if @operation == "multiply" || @operation == "*"
             puts @valueX * @valueY
-        elsif @operation == "divide"
+        elsif @operation == "divide" || @operation == "/"
             puts @valueX / @valueY 
-        elsif @operation == "add"
+        elsif @operation == "add" || @operation == "+"
             puts @valueX + @valueY
-        elsif @operation == "subtract"
+        elsif @operation == "subtract" || @operation == "-"
             puts @valueX - @valueY
         end     
     end
